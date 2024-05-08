@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrikant Sahu - Portfolio</title>
+  <link rel="stylesheet" href="indexcss.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+
+ 
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+
+<script>
+
+     
+      function showModal() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+      
+        function closeModal() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+       
+        window.onload = showModal;  
+
+
+
+  function submitForm() {
+     
+      alert("Form submitted successfully!");
+  }
+
+  function validateName() {
+      var nameInput = document.getElementById("name").value;
+      var nameError = document.getElementById("nameError");
+      if (nameInput === '') {
+          nameError.textContent = "Name is required.";
+      } else {
+          nameError.textContent = '';
+      }
+  }
+
+  function validateEmail() {
+      var emailInput = document.getElementById("email").value;
+      var emailError = document.getElementById("emailError");
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput)) {
+          emailError.textContent = "Invalid email address.";
+      } else {
+          emailError.textContent = '';
+      }
+  }
+
+  function validateMessage() {
+      var messageInput = document.getElementById("message").value;
+      var messageError = document.getElementById("messageError");
+      if (messageInput === '') {
+          messageError.textContent = "Message is required.";
+      } else {
+          messageError.textContent = '';
+      }
+  }
+
+ 
+</script>
+</head>
+
+<body>
+
+  <div class="overlay" id="overlay">
+        <div class="modal">
+      <h1>Summary: Portfolio Website</h1>
+      <div class="custom-message-box">
+        <div id="uimargen" class="container">
+        <ul class="list-group">
+          <ol>
+            <li>
+              <h2>Languages Used:</h2>
+              <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+              </ul>
+          </li>
+          <br>
+          <li>
+              <h2>Frameworks & Libraries:</h2>
+              <ul>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+              </ul>
+          </li>
+  <br>
+          <li>
+              <h2>Features:</h2>
+              <ul>
+                  <li>Responsive design for mobile and desktop</li>
+                  <li>Contact form with validation</li>
+                  <li>Modal popup for an important message</li>
+              </ul>
+          </li>
+<br>
+          <li>
+              <h2>Additional Details:</h2>
+              <ul>
+                  <li>Form validation implemented using JavaScript</li>
+                  <li>Modal popup created with JavaScript and CSS</li>
+                  <li>Fixed navbar for easy navigation</li>
+                  <li>Bootstrap used for styling and layout components</li>
+              </ul>
+          </li>
+      </ol>
+      </div>
+ 
+ <h1> <button class="btn btn-secondary" onclick="closeModal()">okay</button></h1> <!-- Bootstrap button -->
+</div>
+</div>
+</div>
+
+
+  <header id="home">
+    <div class="container"> 
+    
+      <div class="logo-div">
+        <h1 class="logo hover-logo">Shrikant Sahu</h1>
+      </div>
+      <p class="subtitle">Web Developer & Designer</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="loginindex.html" class="login-btn">Login</a></li>
+          
+          <li><a href="signup-btn">Signup</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="bio">
+          <h3>
+            Hi, I'm Shrikant Sahu. <br />
+            A Passionate Web Developer & Designer
+          </h3>
+          <p>
+            I'm based in [Your City, Country], with a keen interest in
+            creating beautiful and functional websites. I strive to deliver
+            exceptional user experiences through clean and elegant design.
+          </p>
+          <p>
+            My skills include HTML, CSS, JavaScript, and various front-end
+            frameworks. I love turning ideas into reality and continuously
+            expanding my knowledge in the ever-evolving field of web
+            development.
+          </p>
+          <p>
+            <span class="highlight">Highlight:</span> HTML, CSS, JavaScript,
+            Front-end frameworks
+          </p>
+                </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+          <div class="portfolio-item">
+            <p>Project Title 1</p>
+            <p>
+              Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Nulla eget felis vel sapien faucibus mollis.
+            </p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+          <div class="portfolio-item">
+            <p>Project Title 2</p>
+            <p>
+              Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Nulla eget felis vel sapien faucibus mollis.
+            </p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+          <div class="portfolio-item">
+            <p>Project Title 3</p>
+            <p>
+              Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Nulla eget felis vel sapien faucibus mollis.
+            </p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+          <div class="portfolio-item">
+            <p>Project Title 4</p>
+            <p>
+              Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Nulla eget felis vel sapien faucibus mollis.
+            </p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+          <div class="portfolio-item">
+            <p>Project Title 5</p>
+            <p>
+              Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Nulla eget felis vel sapien faucibus mollis.
+            </p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+          <div class="portfolio-item">
+            <p>Project Title 6</p>
+            <p>
+              Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Nulla eget felis vel sapien faucibus mollis.
+            </p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-item">
+          <p>University Name</p>
+          <p>Degree: Bachelor of Science in Computer Science</p>
+          <p>Year: 2018 - 2022</p>
+          <p>Description: Add a brief description of your education...</p>
+          <p class="skill">Skills: HTML, CSS, JavaScript, React, Node.js</p>
+                 </div>
+        <div class="education-item">
+          <p>College Name</p>
+                    <p>Degree: Bachelor of Arts in Graphic Design</p>
+          <p>Year: 2016 - 2020</p>
+          <p>Description: Add a brief description of your education...</p>
+          <p class="skill">
+            Skills: Adobe Photoshop, Adobe Illustrator, UI/UX Design
+          </p>
+                 </div>
+        <div class="education-item">
+          <p>High School Name</p>
+         
+          <p>Year: 2012 - 2016</p>
+          <p>Description: Add a brief description of your education...</p>
+          <p class="skill">Skills: Leadership, Teamwork, Time Management</p>
+         
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+          <p><strong>Email:</strong> shrikantdemo@gmail.com</p>
+          <p><strong>Phone:</strong> 8800000013</p>
+          <p>
+            <strong>Address:</strong> XXXX XXXX Indore 452001
+            <span>Madhya Pradesh India</span>
+          </p>
+        </div>
+      </div>   </section>
+     
+      <div>
+        <form id="contactForm" action="#" method="post" onsubmit="submitForm()">
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required onblur="validateName()">
+            <div id="nameError" class="error"></div>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required onblur="validateEmail()">
+            <div id="emailError" class="error"></div>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required onblur="validateMessage()"></textarea>
+            <div id="messageError" class="error"></div>
+    
+            <div class="checkbox-container">
+                <input type="checkbox" id="robotCheck" class="custom-checkbox" required>
+                <label for="robotCheck">Verify You Are Not A Robot</label>
+            </div>
+              
+            <button type="submit" class="btn" id="submitButton"  >Submit</button>
+            
+        </form>
+    </div>
+    
+  
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Shrikant sahu - Portfolio</p>
+      </div>
+    </footer>
+</body>
+
+</html>
