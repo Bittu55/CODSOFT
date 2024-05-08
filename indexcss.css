@@ -14,21 +14,20 @@ body {
     
 }
 
-/* Style for the modal overlay */
 .overlay {
     position: fixed;
     top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    display: none; /* Hide by default */
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
 }
 
-/* Style for the modal dialog box */
+
 .modal {
     background-color: white;
     padding: 34px 62px 0px 62px;
@@ -37,7 +36,7 @@ body {
 }
 
 .custom-message-box {
-    background-color: #6dd5fa; /* Unique color for the message box */
+    background-color: #6dd5fa; 
     padding: 3px 1px 0px 12px;
     margin: 1px 0px 33px 0px;
     border-radius: 5px;
@@ -61,7 +60,7 @@ margin: 50px;
     color: #fff;
     padding: 22px 0;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font family */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     background: linear-gradient(to right, #2980b9, #6dd5fa);
 
 }
@@ -100,16 +99,16 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.3s ease; /* Add transition for smooth color change */
-    font-weight: bold; /* Add font weight */
+    transition: color 0.3s ease; 
+    font-weight: bold; 
 }
 
 header nav ul li a:hover {
-    color: #f39c12; /* Change color on hover */
-    transform: scale(1.1); /* Scale up on hover */
+    color: #f39c12; 
+    transform: scale(1.1);
 } 
  
-   /* About Me Section Styles */
+   
    #about {
     padding: 100px 0;
 }
@@ -138,10 +137,10 @@ header nav ul li a:hover {
 }
 
 .bio h3 {
-    color: #1a1a1a; /* Changed font color */
-    font-size: 2.5em; /* Increased font size */
+    color: #1a1a1a;
+    font-size: 2.5em; 
     margin-bottom: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bio p {
@@ -150,24 +149,23 @@ header nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Additional styles */
+
 #about h2 {
-    background: linear-gradient(to right, #f9f9f9, #eaeaea); /* Gradient background */
-    padding: 10px 20px; /* Added padding */
-    border-radius: 10px; /* Added border radius */
-    display: inline-block; /* Ensures border and background only wraps around the text */
-    margin-bottom: 30px; /* Added margin for spacing */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font family */
-    font-size: 2em; /* Increased font size */
-    color: #333; /* Changed font color */
+    background: linear-gradient(to right, #f9f9f9, #eaeaea); 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    display: inline-block; 
+    margin-bottom: 30px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em; 
+    color: #333; 
 }
 
 .highlight {
-    padding: 5px 10px; /* Added padding */
-    border-radius: 5px; /* Added border radius */
+    padding: 5px 10px; 
+    border-radius: 5px; 
 }
 
- /* Portfolio Section Styles */
  #portfolio {
     padding: 100px 0;
 }
@@ -182,19 +180,19 @@ header nav ul li a:hover {
     position: relative;
     padding: 30px;
     border-radius: 10px;
-    border: 2px solid #3498db; /* Added border */
+    border: 2px solid #3498db;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portfolio-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #2980b9; /* Changed text color */
+    color: #2980b9; 
     transition: color 0.3s ease;
 }
 
 .portfolio-item p {
-    color: #555555; /* Changed text color */
+    color: #555555; 
     margin-bottom: 20px;
 }
 
@@ -232,22 +230,19 @@ header nav ul li a:hover {
 
 .portfolio-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Added box shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .portfolio-item:hover h3 {
-    color: #3498db; /* Changed text color */
+    color: #3498db; 
 }
 
 h2 {
-    text-align: center; /* Center align the heading */
-    padding-bottom: 10px; /* Adjust spacing */
+    text-align: center; 
+    padding-bottom: 10px; 
 }
 
 
-
-
-/* Contact Me Section Styles */
 #contact {
     padding: 100px 0;
 }
@@ -292,26 +287,6 @@ textarea {
 }
 
 
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Education Styles */
 #education {
     background-color: #fff;
 }
@@ -338,13 +313,12 @@ textarea {
 }
 
 .custom-checkbox {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-   margin-right:10px; /* Add spacing between checkbox and label */
+    width: 30px; 
+    height: 30px; 
+   margin-right:10px; 
     margin-left: 33%;
 }
 
-/* Footer Styles */
 footer {
     background: linear-gradient(to right, #2980b9, #6dd5fa);
     color: #fff;
@@ -352,5 +326,4 @@ footer {
     padding: 20px 0;
     margin: 46px;
 }
-
 
